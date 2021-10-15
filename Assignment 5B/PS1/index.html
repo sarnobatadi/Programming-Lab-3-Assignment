@@ -1,0 +1,138 @@
+<!--
+Author - Aditya Sarnobat
+PRN - 2019BTECS00042
+Batch - T4
+PL3 Assignment 5A
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Blogs on Android</title>
+    <link rel="icon"
+        href="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Android_symbol_green_2.max-500x500.png"
+        type="image/x-icon">
+</head>
+
+<body style="max-width: 750px; margin: auto;">
+
+    <header style="text-align: center;">
+        <h1>Blog on Changing App language in Android Apps</h1>
+        <h3>By <em><a href="https://blog.mindorks.com/user/profile/id/17146">Sumit Mishra</a></em></h3>
+    </header>
+    <hr />
+    <section>
+        <img src="https://s3.ap-south-1.amazonaws.com/mindorks-server-uploads/changing-app-language-in-android-banner-94b2757a89091539.jpg"
+            style="max-width: 750px;" />
+
+        <!--Start Blog Article-->
+        <article>
+            <p> &nbsp &nbsp In your app, you can add as many languages as you want. By languages, I mean the language of
+                the text
+                that we see in any mobile application. For example, if you have English, French, and Hindi users, then
+                you can have language support for all these languages. Like "Hello" in English will become "Bonjour" in
+                French and "नमस्ते" in Hindi.
+            </p>
+            <p> &nbsp &nbsp
+                But how can we change the language? That's the topic for this blog. In this blog, we will learn how to
+                change the App locale in Android with ease.
+                <br />
+                By default, you have English as your default language for the whole app and the text corresponding to
+                the English language will be there in our strings.xml file. So, similarly, for other languages, you need
+                to add their strings.xml file.
+                <br />
+                So, basically Android loads the resources related to language based on the system locale setting. For
+                example, if the language of your Android phone is English, then strings.xml of English will be loaded by
+                Android. We do not have to do anything extra here.
+                <br />
+                But, many times, we want our users to change the language of our App only by selecting the preferred
+                language and not by changing the language of our Android phone. So, let's see how to add this.
+                First of all, create a project in Android Studio. Here, we will be having 2 activities:
+            </p>
+            <ul>
+                <li>
+                    MainActivity -
+                </li>
+                <p>
+                    This will contain one welcome TextView and two Buttons, one for opening the next activity in the
+                    English language and the other for opening the next activity in the Hindi language.
+                </p>
+                <li>
+                    LanguageActivity -
+                </li>
+                <p>
+                    This will simply contain a TextView displaying some message. The message will be shown in English if
+                    the language of the app is English and the message will be shown in Hindi if the language of the app
+                    is Hindi.
+                </p>
+            </ul>
+            <p>
+                Click <strong><a href="https://blog.mindorks.com/changing-app-language-in-android">Here</a> </strong>for
+                complete code
+
+            </p>
+        </article>
+    </section>
+    <hr />
+    <section>
+        <h2>More Blogs on Android</h2>
+        <article>
+            <ul>
+                <li>
+                    <Strong><a href="https://blog.mindorks.com/build-variants-in-android">Build Variants in
+                            Android</a></Strong>
+                    <p>
+                        In this blog, you will learn what Build Variants are and how to create different build
+                        variants in Android.
+                    </p>
+                </li>
+                <li>
+                    <Strong><a href="https://blog.mindorks.com/imageview-scaletype-in-android">Understanding ImageView
+                            ScaleType in Android</a></Strong>
+                    <p>
+                        In this blog, you will learn various ScaleTypes that are used for images in our android
+                        application
+                    </p>
+                </li>
+                <li>
+                    <Strong><a href="https://blog.mindorks.com/jetpack-compose-navigation">Jetpack Compose: Navigation</a></Strong>
+                    <p>
+                        In this blog, you will learn how to navigate between different composable using Jetpack
+                        navigation
+                    </p>
+                </li>
+            </ul>
+        </article>
+
+    </section>
+    <hr/>
+
+    <footer>
+        <h2>About Author</h2>
+        <img src="https://lh3.googleusercontent.com/a-/AOh14GiHP4JrkmlLjuz_uG1g4E0MhTUClSNytqB8o-pxCA=s96-c?sz=300" style="margin-left: 40%;"/>
+        <h3 style="text-align: center;">Software Development Engineer at MindOrks</h3>
+        <address style="text-align: center;">
+            <a href="https://www.facebook.com/mishra3452">facebook</a>
+            <a href="https://twitter.com/hiii_sumit">twitter</a>
+            <a href="https://www.linkedin.com/in/sumit-mishra-a15499135/">linkedin</a>
+            <a href="https://github.com/mishra3452">github</a>
+        </address>
+        <hr/>
+        <br/>
+        
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
