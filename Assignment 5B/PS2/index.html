@@ -1,0 +1,142 @@
+<!--
+Author - Aditya Sarnobat
+PRN - 2019BTECS00042
+Batch - T4
+PL3 Assignment 5B PS1
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finding Max Min Element</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png"
+        type="image/x-icon">
+</head>
+
+<body style="max-width: 750px; margin: auto;">
+    <!--Heading of the page Starts-->
+    <header style="text-align: center;">
+        <h1>Program to find the maximum and minimum element in an array</h1>
+        <h3>Using CPP language</h3>
+    </header>
+    <!--Heading End-->
+    <hr />
+    <!--Code Starts-->
+    <section>
+        <h2>CPP Code</h2>
+        <code>
+            <pre>
+
+                #include 'iostream'
+                using namespace std;
+
+                int main()
+                {
+                        <var>int n;</var>
+                        cout<<"Enter Size of Array : ";
+                        cin>>n;
+                        <var>int ar[n];</var>
+                        cout<<" Enter Array Elements : ";
+                        for(int i=0 ; i<n ; i++)
+                        {
+                            cin>>ar[i];
+                        }
+                        <var>int min = ar[0] , max =ar[0];</var>
+                        for(int i=0 ; i< n ; i++ )
+                        {
+                            if(ar[i] > max)
+                            {
+                                max = ar[i];
+                            }
+                            if(ar[i] < min)
+                            {
+                                min = ar[i];
+                            }
+                        }
+                        cout<<" Max : " << max ;
+                        cout<< " Min : " << min ;
+                }
+                </pre>
+        </code>
+
+    </section>
+    <!--Code Ends-->
+    <hr />
+    <!--Sample Input Starts-->
+    <section>
+        <h2>Sample Input</h2>
+        <article>
+            <kbd>
+                <pre>
+                    Enter Size of Array : 4
+                    Enter Array Elements : 2 3 4 1
+                </pre>
+            </kbd>
+        </article>
+    </section>
+    <!--Sample Input Ends-->
+    <hr />
+    <!--Sample Output Starts-->
+    <section>
+        <h2>Sample Output</h2>
+        <article>
+            <samp>
+                <pre>
+
+                Max : 4
+                Min : 1
+           
+                </pre>
+            </samp>
+        </article>
+    </section>
+    <!--Sample Output Ends-->
+    <hr />
+    <!--Variables Starts-->
+    <section>
+        <h2>Variables Used in Program</h2>
+        <article>
+            <var>
+                <pre>
+                    int n      number of elements in array
+                    int ar[]   array 
+                    int max    maximum element
+                    int min    minimum element
+
+                </pre>
+            </var>
+        </article>
+    </section>
+    <!--Variables Ends-->
+    <hr />
+    <!--Time Complexity Starts-->
+    <section>
+        <h2>Time Complexity</h2>
+        <article>
+            <pre>
+                Complexity : O(n) 
+                Above Solution Provides Answere in Linear Time Complexity
+                <br/>
+                Another Approach is by sorting technique
+                Which will provide solution in O(n<sup>2</sup>) time
+            </pre>
+
+        </article>
+    </section>
+    <!--Time Complexity Ends-->
+    <hr />
+    <!--Reference Starts-->
+    <footer>
+        <small>
+            <h4>Check Reference code <a href="https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/">here </a>
+            </h4>
+        </small>
+    </footer>
+    <!--Reference Ends-->
+
+
+</body>
+
+
+</html>
